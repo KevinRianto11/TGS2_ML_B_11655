@@ -7,7 +7,7 @@ import os
 model_path = 'GBT_heartDisease_model.pkl'
 ##model=os.path.join(model_path, r'GBT_heartDisease_model.pkl')
 
-with open(model_path) as f:
+with open(model_path, 'rb') as f:
     loaded_model = pickle.load(f)
 
 rf_model = loaded_model
